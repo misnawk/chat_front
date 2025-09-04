@@ -12,7 +12,7 @@ const Chat = () => {
   // 소켓 자동연결 및 설정
   useEffect(() => {
     // WebSocket 자동 연결 설정
-    const ws = new WebSocket("ws://chat-front-phi-murex.vercel.app");
+    const ws = new WebSocket("wss://chat-front-phi-murex.vercel.app/");
     // ws 안에는 속성과 이벤트가 있다.
     setSocket(ws);
 
